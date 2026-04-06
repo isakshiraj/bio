@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+}
+
+.mainHeading{
+    text-align:center;
+    font-size:32px;
+    margin-top:30px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+/* Main layout */
+
+.mainContainer{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
+    padding:40px;
+}
+
+/* Input Section */
+
+.inputContainer{
+    width:420px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.inputContainer label{
+    display:block;
+    margin-top:12px;
+    font-weight:600;
+}
+
+.inputContainer input{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.inputContainer button{
+    margin-top:20px;
+    width:100%;
+    padding:10px;
+    background:#8cfc7e;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+
+/* Output Section */
+
+.outputContainer{
+    width:420px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.outputRow{
+display:flex;
+align-items:center;
+margin-top:15px;
+gap:10px;
+}
+
+.outputRow label{
+width:220px;
+font-weight:500;
+}
+
+.resultBox{
+width:120px;
+height:35px;
+border:1px solid #ccc;
+border-radius:5px;
+background:#f5f7ff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:600;
+}
+
+.unit{
+font-weight:500;
+}

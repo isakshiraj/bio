@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biogas Packed Bed Scrubber Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="mainHeading">Biogas Scrubber Design Calculator</h2>
+
+    <div class="mainContainer">
+        <div class="inputContainer">
+
+            <h3>Input Data</h3>
+
+            <label>1. Capacity of Biogas Plant (m³/day)</label>
+            <input type="number" id="capacity" placeholder="Enter Value">
+
+            <label>2. Gas Availability (m³/day)</label>
+            <input type="number" id="gasAvailability" placeholder="Enter Value">
+
+            <label>3. Hours of Operation (hours)</label>
+            <input type="number" id="hours" placeholder="Enter Value">
+
+            <label>4. Composition of Methane (percentage)</label>
+            <input type="number" id="ch4" placeholder="Enter Value">
+
+            <label>4. Composition of Carbon Dioxide (percentage)</label>
+            <input type="number" id="co2" placeholder="Enter Value">
+
+            <label>5. Operating Temperature (°C)</label>
+            <input type="number" id="temp" placeholder="Enter Value">
+
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="outputContainer">
+
+            <h3>Output</h3>
+
+            <div class="outputRow">
+                <label>Molecular Weight of Biogas:</label>
+                <div class="resultBox" id="molecularWeight"></div>
+                <span class="unit">kg/kgmol</span>
+            </div>
+
+            <div class="outputRow">
+                <label>Density of Biogas:</label>
+                <div class="resultBox" id="density"></div>
+                <span class="unit">kg/m³</span>
+            </div>
+
+            <div class="outputRow">
+                <label>Mass Gas Flow Rate:</label>
+                <div class="resultBox" id="massFlow"></div>
+                <span class="unit">kg/h</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
